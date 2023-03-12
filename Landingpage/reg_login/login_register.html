@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DentaTIP</title>
+
+<!-- ============== CSS links  ================= -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container" id="container">
+    
+<!-- =============== Register Form ===============-->
+<div class="form-container register-container">
+  <form action="#">
+    <h1>Register Here.</h1>
+    <input type="text" placeholder="Name" name="name">
+    <input type="text" placeholder="Student Number" name="student_number">
+    <input type="email" placeholder="TIP-M Email" name="email">
+    <input type="password" placeholder="Password" name="password">
+    <input type="password" placeholder="Confirm Password" name="confirm_password">
+    <button>Register</button>
+  </form>
+</div>
+
+
+<!-- =============== Login Form ===============-->
+    <div class="form-container login-container">
+      <form action="#">
+        <h1>Log in to continue.</h1>
+        <input type="text" placeholder="Student Number" name="student_number">
+        <input type="email" placeholder="TIP-M Email" name="email">
+        <input type="password" placeholder="Password" name="password">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Remember me</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <button>Log In</button>
+
+      </form>
+    </div>
+
+<!-- =============== Overlays ===============-->
+    <div class="overlay-container">
+      <div class="overlay">
+     <!-- login -->
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Welcome to <br> DentaTIP</h1>
+          <p></p>
+          <p>If you have already registered, log in here.</p>
+          <button class="ghost" id="login">Log In
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+     <!-- register -->
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Welcome to <br> DentaTIP</h1>
+          <p></p>
+          <p>If you don't have an account yet, click the register button to continue.</p>
+          <button class="ghost" id="register">Register
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
